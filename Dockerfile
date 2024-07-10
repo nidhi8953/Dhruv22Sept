@@ -1,8 +1,8 @@
 FROM node:latest AS ang
 WORKDIR /usr/local/app
 COPY ./  /usr/local/app
+RUN npm install -g @angular/cli
 RUN npm install -g npm@10.8.1 
-ENV PATH="node_modules/.bin/$PATH"
 RUN npm run build
 
 
