@@ -1,4 +1,4 @@
-FROM node:18.17.1-alpine AS ang
+FROM node:latest AS ang
 WORKDIR /usr/local/app
 COPY ./  /usr/local/app
 RUN npm install -g npm@10.8.1 
