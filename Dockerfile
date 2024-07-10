@@ -1,7 +1,7 @@
 FROM node:18.17.1-alpine AS ang
 WORKDIR /usr/local/app
 COPY ./  /usr/local/app
-RUN npm install 
+RUN npm install -g npm@10.8.1 
 RUN npm run build
 
 
